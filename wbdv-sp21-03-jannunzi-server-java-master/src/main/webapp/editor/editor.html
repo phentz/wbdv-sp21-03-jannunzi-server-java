@@ -9,25 +9,67 @@
 </head>
 <body>
     <div class="container">
-        <h1>Editor</h1>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">X CS5610 - WebDev</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Build <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Theme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Apps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+                <i class="pull-right fa fa-plus"></i>
+            </span>
+          </div>
+        </nav>
 
         <div class="row">
             <div class="col-4">
 
-                <ul class="list-group">
+                <ul class="list-group-item list-group-item-dark">
+                    <li class="list-group-item ">
+                        Module 1 - JQuery
+                        <i class="pull-right fa fa-times"></i>
+                    </li>
                     <li class="list-group-item active">
-                        Module 1
-                        <i class="pull-right fa fa-trash"></i>
+                        Module 2 - React
+                        <i class="pull-right fa fa-times"></i>
                     </li>
-                    <li class="list-group-item">
-                        Module 2
-                        <i class="pull-right fa fa-trash"></i>
+                    <li class="list-group-item">Module 3 Redux
+                        <i class="pull-right fa fa-times"></i>
                     </li>
-                    <li class="list-group-item">Module 3</li>
-                    <li class="list-group-item">Module 4</li>
-                    <li class="list-group-item">Module 5</li>
-                    <li class="list-group-item">Module 6</li>
-                    <li class="list-group-item">Module 7</li>
+                    
+                    <li class="list-group-item">Module 4 Native
+                        <i class="pull-right fa fa-times"></i>
+                    </li>
+                    <li class="list-group-item">Module 5 Angular
+                        <i class="pull-right fa fa-times"></i>
+                    </li>
+                    <li class="list-group-item">Module 6 Node
+                        <i class="pull-right fa fa-times"></i>
+                    </li>
+                    <li class="list-group-item">Module 7 Mongo
+                        <i class="pull-right fa fa-times"></i>
+                    </li>
                 </ul>
 
             </div>
@@ -35,18 +77,18 @@
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            Active
-                            <i class="pull-right fa fa-trash"></i>
+                            Topic 1
+                            
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Topic 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Topic 3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Topic 4</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
@@ -57,21 +99,59 @@
 
                 <br/>
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">Save</div>
+                    <i class="pull-right fa fa-toggle-off" aria-hidden="true"></i> 
+                    <button type="button" class="btn btn-light">Preview</button>
+                    <button type="button" class="btn btn-success">Save</button>
 
+
+                  </div>
+                <br/>
+                <div class="card" style="width: 45rem;">
+                    <div class="card-body">
+                      
+                      <ul class="list-group-item ">
+                       
+                           Heading widget
+
+                            <i class="pull-right fa fa-times" aria-hidden="true"></i>
+                            <i class="pull-right fa fa-arrow-down" aria-hidden="true"></i>
+                            <i class="pull-right fa fa-arrow-up" aria-hidden="true"></i>
+
+
+
+                    </ul>
+                      
+                     
+
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Heading Text</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                                
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+</svg>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Widget name</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                                  
+                  </div>
 
             </div>
         </div>
